@@ -19,7 +19,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Customer implements Serializable  {
- 
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
