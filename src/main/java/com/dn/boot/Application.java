@@ -22,10 +22,12 @@ public class Application {
     @Bean
     CommandLineRunner init(CustomerRespository repo) {
         return (evt) ->  {
-            repo.save(new Customer("John","john@dn.com"));
-            repo.save(new Customer("Peter","peter@dn.com"));
-            repo.save(new Customer("Alex","alex@dn.com"));
-            repo.save(new Customer("Jenny","jenny@dn.com"));
+            repo.save(new Customer("Vikram","peter@stryker.com"));
+            repo.save(new Customer("Peter","peter@samsung.com"));
+            repo.save(new Customer("John","john@adp.com"));
+            repo.save(new Customer("Alex","alex@adp.com"));
+            repo.save(new Customer("Jenny","jenny@ets.com"));
+            repo.save(new Customer("Jim","jim@mgs.com"));
         };
     }
 }
